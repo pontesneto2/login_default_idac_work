@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #165F38;
+    background-image: url('/images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-box{
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    box-shadow: 5px -10px 20px rgba(0,0,0,0.30);
+    backdrop-filter: blur(1.8rem);
+    -webkit-backdrop-filter: blur(1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    width: 400px;
+}
+
+#sis-title{
+    font-size: 34px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+.control-form-user, .control-form-password{
+    width: 85%;
+}
+
+input, #password-key, #username{
+    padding-left: 10px;
+    width: 400px;
+    height: 35px;
+    border-radius: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.518);
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.738);
+    color: #333;
+}
+
+#password-key:hover, #username:hover{
+    border: 1px solid #FFF;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+} 
+
+button{
+    background-color: #FF682F;
+    font-size: 16px;
+    width: 400px;
+    height: 35px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #FFF;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+button, a{
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+button:hover{
+    background-image: radial-gradient(circle, #ff682f, #f35d25, #e7511a, #db450e, #cf3900);
+    scale: 1.01;
+}
+
+button:active{
+    transform: translateY(0.1em);
+}
+
+#forget-password{
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#forget-password:hover{
+    color: #FFF;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+.icons-redes{
+    display: flex;
+    flex-direction: row;
+}
+
+#logo-gov{
+    background-image: url("/images/idace-logo.png");
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 150px;
+    background-size: contain;
+    bottom: 0;
+    margin-top: 30px;
+}
+
+#sda{
+    background-image: url("/images/icon-SDA-app.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 50px;
+    background-size: contain;
+    bottom: 0;
+    margin-top: 30px;
+    right: 0;
+}
