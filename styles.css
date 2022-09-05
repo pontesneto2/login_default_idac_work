@@ -9,7 +9,7 @@
     width: 100%;
     height: 100vh;
     background-color: #165F38;
-    background-image: url('/background.jpeg');
+    background-image: url('/fundo_chapeu_drone.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,13 +19,13 @@
     justify-content: center;
 }
 .content-box{
-    width: 500px;
-    height: 500px;
-    background: rgba(255, 255, 255, 0.15);
+    width: 450px;
+    height: 520px;
+    background: rgba(255, 255, 255, 0.274);
     border-radius: 1rem;
     box-shadow: 5px -10px 20px rgba(0,0,0,0.30);
-    backdrop-filter: blur(1.8rem);
-    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(.6rem);
+    -webkit-backdrop-filter: blur(.1rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,12 +37,13 @@
 }
 
 #sis-title{
-    font-size: 34px;
+    font-size: 31px;
     font-weight: 700;
     color: #000;
     text-align: center;
     margin-bottom: 50px;
     margin-top: 60px;
+    letter-spacing: 0.01px;
 }
 
 .control-form-user, .control-form-password{
@@ -60,14 +61,21 @@ input, #password-key, #username{
     border-bottom: none;
     font-size: 15px;
     margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.518);
+    background-color: rgba(255, 255, 255, 0.432);
     font-weight: 500;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.738);
+    border-bottom: 2px solid rgb(255, 255, 255);
     color: #333;
 }
 
 #password-key:hover, #username:hover{
-    border: 1px solid #FFF;
+    border-left: 1px solid rgba(255, 255, 255, 0.582);
+    border-right: 1px solid rgba(255, 255, 255, 0.582);
+    border-top: 1px solid rgba(255, 255, 255, 0.582);
+}
+
+#password-key:focus, #username:focus{
+    background-color: #FFF;
+    border-bottom: 2px solid #FF682F;
 }
 
 textarea:focus, input:focus, select:focus {
@@ -124,11 +132,6 @@ button:active{
     align-items: center;
 }
 
-.icons-redes{
-    display: flex;
-    flex-direction: row;
-}
-
 #logo-gov{
     background-image: url("/idace-logo.png");
     background-repeat: no-repeat;
@@ -139,17 +142,18 @@ button:active{
     margin-top: 30px;
 }
 
-#sda{
-    background-image: url("/icon-sda.png");
-    background-repeat: no-repeat;
-    height: 85px;
-    width: 80px;
-    background-position-x: 25px;
-    background-position-y: 10px;
-    background-size: contain;
-    bottom: 0;
-    margin-top: 30px;
-    right: 0;
+#logo-gov:hover{
+    opacity: .8;
+    scale: 1.1;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1585px) {
